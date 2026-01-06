@@ -1,13 +1,4 @@
-# Ignore Next.js files since this is a static HTML site
-next.config.ts
-next-env.d.ts
-package.json
-package-lock.json
-node_modules/
-src/
-tsconfig.json
-eslint.config.mjs
-postcss.config.mjs
-tailwind.config.*
+# Ignore unnecessary files - keep only essential website files
 README.md
 SEO-GUIDELINES.md
+.vercelignore
