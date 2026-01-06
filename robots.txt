@@ -1,0 +1,22 @@
+# Robots.txt for Safehouse Shutter Impact Windows & Doors
+# https://safehouseshutter.com
+
+# Allow all crawlers
+User-agent: *
+
+# Allow all pages
+Allow: /
+
+# Disallow development and system files
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.next/
+Disallow: /*.json$
+Disallow: /*.config.*
+
+# Sitemap location
+Sitemap: https://safehouseshutter.com/sitemap.xml
+
+# Crawl-delay for polite crawling (optional, respected by some bots)
+# Crawl-delay: 1
+
