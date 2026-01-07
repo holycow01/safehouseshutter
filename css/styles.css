@@ -175,16 +175,10 @@ img {
   gap: var(--space-sm);
 }
 
-.logo-icon {
-  width: 48px;
+.logo-img {
   height: 48px;
-  background: linear-gradient(135deg, var(--primary-navy), var(--primary-steel));
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-size: 1.5rem;
+  width: auto;
+  display: block;
 }
 
 .logo-text {
@@ -201,6 +195,22 @@ img {
   color: var(--gray-500);
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+  margin-left: -15px;
+  margin-top: -50px;
+}
+
+.footer-logo-img {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .nav-main {
@@ -3305,6 +3315,23 @@ textarea.form-control {
     --header-height: 70px;
   }
   
+  .header-inner {
+    padding: 0 var(--space-md);
+    height: var(--header-height);
+  }
+  
+  .logo-img {
+    height: 36px;
+  }
+  
+  .logo-text {
+    font-size: 1rem;
+  }
+  
+  .logo-text span {
+    font-size: 0.65rem;
+  }
+  
   .nav-main {
     display: none;
   }
@@ -3321,9 +3348,19 @@ textarea.form-control {
     display: block;
   }
   
+  .hero {
+    padding-top: var(--header-height);
+    min-height: calc(100vh - var(--header-height));
+  }
+  
+  .hero-content {
+    padding: var(--space-xl) 0;
+  }
+  
   .hero-stats {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
+    margin-top: var(--space-xl);
   }
   
   .services-grid,
@@ -3359,6 +3396,38 @@ textarea.form-control {
   .btn-lg {
     width: 100%;
     max-width: 300px;
+  }
+  
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+  
+  .section:first-of-type {
+    padding-top: var(--space-3xl);
+  }
+  
+  .container {
+    padding: 0 var(--space-md);
+  }
+  
+  .about-intro-section {
+    padding-top: var(--space-3xl);
+  }
+  
+  .about-intro-content {
+    margin-bottom: var(--space-xl);
+  }
+  
+  .page-header {
+    padding: calc(var(--header-height) + var(--space-xl)) 0 var(--space-xl);
+  }
+  
+  .hero-content {
+    padding-top: var(--space-lg);
+  }
+  
+  .hero-description {
+    margin-bottom: var(--space-xl);
   }
 }
 
