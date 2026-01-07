@@ -2536,6 +2536,21 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.owner-image {
+  width: 100%;
+}
+
+.owner-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0;
+  border: 14px solid var(--white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+  display: block;
+}
+
 .owner-content h2 {
   margin-bottom: var(--space-lg);
 }
@@ -2579,6 +2594,15 @@ textarea.form-control {
   .owner-image-placeholder {
     max-width: 200px;
     margin: 0 auto;
+  }
+  
+  .owner-image {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .owner-image img {
+    border-width: 10px;
   }
   
   .owner-content p:nth-child(4) {
